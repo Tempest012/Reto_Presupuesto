@@ -1,0 +1,11 @@
+<div class="col-md-6">
+    <h2 class="text-center text-primary">Ingresos</h2>
+    <ul class="list-group mt-3">
+        <li *ngFor="let ingreso of ingresos" class="list-group-item d-flex justify-content-between align-items-center">
+            {{ ingreso.descripcion }} - {{ ingreso.valor }}
+            <button class="btn btn-sm btn-danger" (click)="eliminarIngreso(ingreso)">
+                <i class="bi bi-x-circle"></i>
+            </button>
+        </li>
+    </ul>
+</div>
